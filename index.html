@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="Andreu Miró — Level Design portfolio, gameplay breakdowns and game development projects.">
+  <title>Andreu Miró — Level Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="Andreu Miró home">
+        <span class="brand-mark">AM<span>.</span></span>
+        <span class="brand-copy"><strong>ANDREU MIRÓ</strong><small>LEVEL DESIGN PORTFOLIO</small></span>
+      </a>
+
+      <div class="sidebar-label">PORTFOLIO</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home" class="nav-link active" data-route="home"><span class="nav-icon">⌂</span>Overview <span class="nav-arrow">↗</span></a>
+        <a href="#level-design" class="nav-link" data-route="level-design"><span class="nav-icon">⌁</span>Level Design</a>
+        <a href="#projects" class="nav-link" data-route="projects"><span class="nav-icon">▧</span>Game Projects</a>
+        <a href="#breakdowns" class="nav-link" data-route="breakdowns"><span class="nav-icon">▷</span>Video Breakdowns</a>
+      </nav>
+
+      <div class="sidebar-label sidebar-label-spaced">ELSEWHERE</div>
+      <nav class="main-nav" aria-label="About and contact">
+        <a href="#about" class="nav-link" data-route="about"><span class="nav-icon">◎</span>About Me</a>
+        <a href="#contact" class="nav-link" data-route="contact"><span class="nav-icon">↗</span>Contact</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <span>OPEN TO OPPORTUNITIES</span>
+        <p>Building thoughtful spaces and memorable player experiences.</p>
+        <div class="sidebar-socials">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        </div>
+      </div>
+      <button class="mobile-close" id="closeSidebar" aria-label="Close navigation">×</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="mobile-header">
+        <button id="openSidebar" class="menu-button" aria-label="Open navigation">☰</button>
+        <a class="mobile-brand" href="#home">AM<span>.</span> <small>PORTFOLIO</small></a>
+        <span class="mobile-status"><i></i> AVAILABLE</span>
+      </header>
+      <div class="topline">
+        <div class="breadcrumbs"><span>PORTFOLIO</span><b>/</b><span id="currentSection">OVERVIEW</span></div>
+        <div class="topline-right"><span class="mono">BARCELONA, ES</span><span class="topline-divider"></span><span class="mono">2026</span></div>
+      </div>
+
+      <section class="page active" id="page-home" data-page="home">
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="eyebrow"><span class="eyebrow-line"></span> JUNIOR LEVEL DESIGNER</div>
+            <h1>Crafting spaces.<br><em>Shaping play.</em></h1>
+            <p class="hero-description">I'm Andreu, a game design graduate focused on level design, player guidance and creating spaces that feel good to explore.</p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#level-design">Explore my work <span>↗</span></a>
+              <a class="button button-quiet" href="#about">A little about me <span>→</span></a>
+            </div>
+          </div>
+          <div class="hero-art" aria-label="Abstract geometric level design illustration">
+            <div class="art-grid"></div>
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-platform platform-back"></div><div class="art-platform platform-mid"></div><div class="art-platform platform-front"></div>
+            <div class="art-cube"><span></span></div>
+            <div class="art-cross cross-one">+</div><div class="art-cross cross-two">+</div>
+            <div class="art-caption mono">FIG. 01 — SPACE / FLOW / PLAY</div>
+          </div>
+        </div>
+
+        <div class="section-heading">
+          <div><div class="eyebrow">SELECTED WORK</div><h2>Featured projects<span class="accent">.</span></h2></div>
+          <a class="text-link" href="#projects">All projects <span>↗</span></a>
+        </div>
+        <div class="project-grid">
+          <a class="project-card" href="#level-design">
+            <div class="project-image image-purple"><div class="image-label mono">LEVEL DESIGN / 01</div><div class="abstract-scene scene-one"><i></i><i></i><i></i><b></b></div><span class="image-number">01</span></div>
+            <div class="project-card-info"><div><h3>Level Design Studies</h3><p>Blockouts · Flow · Player guidance</p></div><span class="card-arrow">↗</span></div>
+          </a>
+          <a class="project-card" href="#projects">
+            <div class="project-image image-orange"><div class="image-label mono">GAME PROJECT / 02</div><div class="abstract-scene scene-two"><i></i><i></i><i></i><b></b></div><span class="image-number">02</span></div>
+            <div class="project-card-info"><div><h3>Game & Team Projects</h3><p>Prototypes · Collaboration · Iteration</p></div><span class="card-arrow">↗</span></div>
+          </a>
+          <a class="project-card" href="#breakdowns">
+            <div class="project-image image-green"><div class="image-label mono">VIDEO / 03</div><div class="abstract-scene scene-three"><i></i><i></i><i></i><b></b></div><span class="image-number">03</span><span class="play-symbol">▶</span></div>
+            <div class="project-card-info"><div><h3>Gameplay Breakdowns</h3><p>Analysis · Design decisions · Lessons</p></div><span class="card-arrow">↗</span></div>
+          </a>
+        </div>
+        <div class="quote-strip"><span class="quote-mark">“</span><p>Good level design teaches the player through the space itself.</p><span class="quote-credit mono">DESIGN PHILOSOPHY / 001</span></div>
+      </section>
+
+      <section class="page" id="page-level-design" data-page="level-design">
+        <div class="page-intro"><div class="eyebrow">01 / LEVEL DESIGN</div><h1>Spaces with<br><em>purpose.</em></h1><p>Blockouts, routes, encounters and environmental cues. This is where I explore how layout can guide players without getting in their way.</p></div>
+        <div class="filter-row"><span class="mono muted">PROJECT INDEX</span><span class="filter-count">03 COLLECTIONS</span></div>
+        <div class="detail-grid">
+          <article class="detail-card"><div class="detail-visual visual-violet"><span class="mono visual-tag">LD / 001</span><div class="blockout"><i></i><i></i><i></i><i></i><b></b></div></div><div class="detail-content"><div class="tag-row"><span>BLOCKOUT</span><span>GREYBOX</span></div><h2>Layout & Player Flow</h2><p>Exploring sightlines, landmarks, pacing and how a space can make the next step feel intuitive.</p><button class="inline-action" data-open-project="layout">View project notes <span>↗</span></button></div></article>
+          <article class="detail-card"><div class="detail-visual visual-coral"><span class="mono visual-tag">LD / 002</span><div class="route-map"><span class="route-node node-a"></span><span class="route-node node-b"></span><span class="route-node node-c"></span><svg viewBox="0 0 300 160" aria-hidden="true"><path d="M25 125 C70 125 55 35 125 45 S175 125 225 80 S265 40 280 28"/></svg></div></div><div class="detail-content"><div class="tag-row"><span>PLAYER GUIDANCE</span><span>ITERATION</span></div><h2>Guiding Without Text</h2><p>Using composition, lighting, landmarks and reward placement to communicate intent through the environment.</p><button class="inline-action" data-open-project="guidance">View project notes <span>↗</span></button></div></article>
+          <article class="detail-card"><div class="detail-visual visual-mint"><span class="mono visual-tag">LD / 003</span><div class="encounter"><i></i><i></i><i></i><b></b><span>PLAYER</span></div></div><div class="detail-content"><div class="tag-row"><span>ENCOUNTERS</span><span>GAMEPLAY</span></div><h2>Combat & Challenge Spaces</h2><p>Testing how arena shape, cover, elevation and enemy placement change the player's decisions.</p><button class="inline-action" data-open-project="encounters">View project notes <span>↗</span></button></div></article>
+        </div>
+        <div class="note-box"><span class="note-icon">✳</span><div><strong>Portfolio note</strong><p>These are starter sections, not claims about completed projects. Replace the descriptions and visuals with your own work before publishing.</p></div></div>
+      </section>
+
+      <section class="page" id="page-projects" data-page="projects">
+        <div class="page-intro"><div class="eyebrow">02 / GAME PROJECTS</div><h1>Built with<br><em>curiosity.</em></h1><p>A selection of game projects, prototypes and collaborative experiments. Each project can tell the story of the problem, the process and the final result.</p></div>
+        <div class="project-list">
+          <article class="project-row"><div class="project-row-index mono">01</div><div class="project-row-art mini-art art-a"><span>PROTOTYPE</span><i></i><b></b></div><div class="project-row-main"><div class="tag-row"><span>GAME JAM</span><span>TEAM PROJECT</span></div><h2>Project Title One</h2><p>Replace this with a short pitch: what the game is, what you worked on, and what makes the project interesting.</p><button class="inline-action" data-open-project="project-one">Read case study <span>↗</span></button></div><div class="project-row-year mono">20XX</div></article>
+          <article class="project-row"><div class="project-row-index mono">02</div><div class="project-row-art mini-art art-b"><span>UNITY</span><i></i><b></b></div><div class="project-row-main"><div class="tag-row"><span>PERSONAL PROJECT</span><span>LEVEL DESIGN</span></div><h2>Project Title Two</h2><p>Describe the design challenge, your contribution, and how you iterated based on testing or feedback.</p><button class="inline-action" data-open-project="project-two">Read case study <span>↗</span></button></div><div class="project-row-year mono">20XX</div></article>
+          <article class="project-row"><div class="project-row-index mono">03</div><div class="project-row-art mini-art art-c"><span>EXPERIMENT</span><i></i><b></b></div><div class="project-row-main"><div class="tag-row"><span>RESEARCH</span><span>PROTOTYPE</span></div><h2>Project Title Three</h2><p>A small experiment can still show design thinking. Explain what you wanted to learn and what changed.</p><button class="inline-action" data-open-project="project-three">Read case study <span>↗</span></button></div><div class="project-row-year mono">20XX</div></article>
+        </div>
+      </section>
+
+      <section class="page" id="page-breakdowns" data-page="breakdowns">
+        <div class="page-intro"><div class="eyebrow">03 / VIDEO BREAKDOWNS</div><h1>Look closer.<br><em>Learn more.</em></h1><p>Gameplay footage and design analysis: how levels communicate, how encounters unfold, and why small decisions matter.</p></div>
+        <div class="video-grid">
+          <article class="video-card"><div class="video-placeholder"><div class="video-top mono"><span>VIDEO / 001</span><span>00:00</span></div><div class="video-play">▶</div><div class="video-bottom mono">ADD YOUR YOUTUBE EMBED</div></div><div class="video-info"><span class="video-category">LEVEL ANALYSIS</span><h2>Reading a Level's Flow</h2><p>Add a YouTube or Vimeo embed and summarise the design points you discuss.</p></div></article>
+          <article class="video-card"><div class="video-placeholder video-placeholder-alt"><div class="video-top mono"><span>VIDEO / 002</span><span>00:00</span></div><div class="video-play">▶</div><div class="video-bottom mono">ADD YOUR YOUTUBE EMBED</div></div><div class="video-info"><span class="video-category">GAMEPLAY STUDY</span><h2>Teaching Through Play</h2><p>Show the moment, explain the intention, then reflect on whether it works.</p></div></article>
+        </div>
+        <div class="embed-help"><strong>How to add a video</strong><p>On YouTube, choose <b>Share → Embed</b> and paste the provided <code>&lt;iframe&gt;</code> into a video card. Instructions are in <code>README.md</code>.</p></div>
+      </section>
+
+      <section class="page" id="page-about" data-page="about">
+        <div class="page-intro"><div class="eyebrow">04 / ABOUT ME</div><h1>Designer mindset.<br><em>Player first.</em></h1><p>I'm Andreu Miró, a game design graduate interested in building clear, engaging and memorable player experiences.</p></div>
+        <div class="about-layout"><div class="about-main"><div class="about-panel"><span class="panel-kicker mono">A LITTLE CONTEXT</span><h2>Curious by design.</h2><p>I enjoy breaking down how games work: how they introduce mechanics, build tension, reward exploration and teach players through their environments.</p><p>My approach combines structured iteration with curiosity. I like making a blockout, testing it, listening to feedback and refining the experience until the design reads more clearly.</p><p><b>This is placeholder copy.</b> Add a more personal introduction, your favourite genres, and the kind of team or projects you want to work with.</p></div><div class="about-panel"><span class="panel-kicker mono">TOOLS & WORKFLOW</span><div class="skill-cloud"><span>Unity</span><span>Figma</span><span>Photoshop</span><span>Maya</span><span>Excel</span><span>Level Blockout</span><span>Gameplay Analysis</span><span>Iteration</span></div></div></div><div class="about-side"><div class="availability-card"><span class="status-dot"></span><span class="mono">CURRENTLY</span><h3>Open to junior opportunities</h3><p>Level design, game design and collaborative projects.</p></div><div class="about-stat"><span class="mono">FOCUS</span><strong>Player experience</strong></div><div class="about-stat"><span class="mono">BASED IN</span><strong>Barcelona, Spain</strong></div></div></div>
+      </section>
+
+      <section class="page" id="page-contact" data-page="contact">
+        <div class="page-intro"><div class="eyebrow">05 / CONTACT</div><h1>Let's make<br><em>something good.</em></h1><p>Have a project, opportunity or just want to talk about level design? I'd be happy to hear from you.</p></div>
+        <div class="contact-panel"><span class="panel-kicker mono">GET IN TOUCH</span><h2>Start a conversation<span class="accent">.</span></h2><p>Replace the links below with your real profiles before publishing.</p><div class="contact-links"><a href="mailto:your.email@example.com"><span>EMAIL</span><strong>your.email@example.com</strong><b>↗</b></a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><span>LINKEDIN</span><strong>Connect with me</strong><b>↗</b></a><a href="https://github.com/" target="_blank" rel="noreferrer"><span>GITHUB</span><strong>Explore my work</strong><b>↗</b></a></div></div>
+      </section>
+
+      <section class="page" id="page-project-detail" data-page="project-detail">
+        <button class="back-link" id="backToProjects">← Back to projects</button>
+        <div class="page-intro"><div class="eyebrow" id="detailEyebrow">PROJECT NOTES</div><h1 id="detailTitle">Project <em>notes.</em></h1><p id="detailLead">A closer look at the design process.</p></div>
+        <div class="case-study"><div class="case-cover"><span class="mono">CASE STUDY / DESIGN PROCESS</span><div class="case-cover-shapes"><i></i><i></i><b></b></div></div><div class="case-body"><div><span class="panel-kicker mono">01 / THE GOAL</span><h2>What was the challenge?</h2><p id="detailGoal">Describe the design problem, constraints and intended player experience.</p></div><div><span class="panel-kicker mono">02 / THE PROCESS</span><h2>Explore, test, iterate.</h2><p id="detailProcess">Explain the choices you made, the alternatives you tested and the feedback that shaped the result.</p></div><div><span class="panel-kicker mono">03 / THE LEARNING</span><h2>What changed?</h2><p id="detailLearning">Share what worked, what didn't, and what you would improve next time.</p></div></div><div class="note-box"><span class="note-icon">✳</span><div><strong>Make this case study yours</strong><p>These are prompts to help you write about your real work. Replace them with specific decisions, screenshots and outcomes.</p></div></div></div>
+      </section>
+
+      <footer class="site-footer"><span>© <span id="year"></span> ANDREU MIRÓ</span><span>DESIGNED WITH INTENTION <b>✳</b></span><a href="#home">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobileScrim"></div>
+  <script src="js/main.js"></script>
+</body>
+</html>
