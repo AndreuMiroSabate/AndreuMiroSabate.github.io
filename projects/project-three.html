@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101116">
+  <meta name="description" content="Andreu Miró — Level Design portfolio, gameplay breakdowns and game development projects.">
+  <title>Andreu Miró — Level Design Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="../index.html#home" aria-label="Andreu Miró home"> 
+        <span class="brand-copy"><strong>ANDREU MIRÓ</strong><small>LEVEL DESIGN PORTFOLIO</small></span>
+      </a>
+
+      <div class="sidebar-label">PORTFOLIO</div>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="../index.html#home" class="nav-link" data-route="home"><span class="nav-icon">⌂</span>Overview <span class="nav-arrow">↗</span></a>
+        <a href="../index.html#level-design" class="nav-link" data-route="level-design"><span class="nav-icon">⌁</span>Level Design</a>
+        <a href="../index.html#projects" class="nav-link active" data-route="projects"><span class="nav-icon">▧</span>Game Projects</a>
+        <a href="../index.html#breakdowns" class="nav-link" data-route="breakdowns"><span class="nav-icon">▷</span>Video Breakdowns</a>
+      </nav>
+
+      <div class="sidebar-label sidebar-label-spaced">ELSEWHERE</div>
+      <nav class="main-nav" aria-label="About and contact">
+        <a href="../index.html#about" class="nav-link" data-route="about"><span class="nav-icon">◎</span>About Me</a>
+        <a href="../index.html#contact" class="nav-link" data-route="contact"><span class="nav-icon">↗</span>Contact</a>
+      </nav>
+
+      <div class="sidebar-bottom">
+        <span class="status-dot"></span>
+        <span>OPEN TO OPPORTUNITIES</span>
+        <p>Building thoughtful spaces and memorable player experiences.</p>
+        <div class="sidebar-socials">
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LINKEDIN ↗</a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer">GITHUB ↗</a>
+        </div>
+      </div>
+      <button class="mobile-close" id="closeSidebar" aria-label="Close navigation">×</button>
+    </aside>
+
+    <main class="main-content">
+      <header class="mobile-header">
+        <button id="openSidebar" class="menu-button" aria-label="Open navigation">☰</button>
+        <a class="mobile-brand" href="../index.html#home">AM<span>.</span> <small>PORTFOLIO</small></a>
+        <span class="mobile-status"><i></i> AVAILABLE</span>
+      </header>
+      <div class="topline">
+        <div class="breadcrumbs"><span>PORTFOLIO</span><b>/</b><span id="currentSection">GAME PROJECTS</span></div>
+        <div class="topline-right"><span class="mono">BARCELONA, ES</span><span class="topline-divider"></span><span class="mono">2026</span></div>
+      </div>
+
+      <section class="page active" data-page="project-detail">
+        <a class="back-link" href="../index.html#projects">← Back to projects</a>
+        <div class="page-intro">
+          <div class="eyebrow">GAME PROJECT / 003</div>
+          <h1>Project <em>Three.</em></h1>
+          <p>Replace this introduction with your own project description.</p>
+        </div>
+        <div class="project-detail-content"><section class="project-section"><span class="panel-kicker mono">01 / RESEARCH QUESTION</span><h2>What did I want to discover?</h2><p>Describe your initial design question.</p></section><section class="project-section"><span class="panel-kicker mono">02 / EXPERIMENT</span><h2>The prototype</h2><p>Explain how the prototype works and how you tested it.</p></section><section class="project-section"><span class="panel-kicker mono">03 / EVIDENCE</span><h2>Results and visuals</h2>
+     <div class="project-placeholder">ADD YOUR SCREENSHOTS, MAPS OR VIDEO HERE</div></section><section class="project-section"><span class="panel-kicker mono">04 / CONCLUSIONS</span><h2>Lessons learned</h2><p>Describe the results and what you would improve.</p></section></div>
+      </section>
+      <footer class="site-footer"><span>© <span id="year"></span> ANDREU MIRÓ</span><span>DESIGNED WITH INTENTION <b>✳</b></span><a href="../index.html#home">BACK TO TOP ↑</a></footer>
+    </main>
+  </div>
+  <div class="mobile-scrim" id="mobileScrim"></div>
+  <script src="../js/project-page.js"></script>
+</body>
+</html>

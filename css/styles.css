@@ -3,3 +3,30 @@
 @media(max-width:1100px){:root{--sidebar:220px}.main-content{padding:0 32px}.hero{grid-template-columns:1fr  .8fr;gap:20px}.hero-art{height:260px}.project-grid,.detail-grid{gap:12px}.project-image{height:145px}.project-row{grid-template-columns:24px 125px minmax(0,1fr) 35px;gap:14px}}
 @media(max-width:800px){.sidebar{transform:translateX(-105%);transition:transform .25s ease;width:270px;box-shadow:none}.sidebar.open{transform:translateX(0);box-shadow:20px 0 60px #0009}.mobile-scrim.visible{display:block;position:fixed;inset:0;background:#0009;z-index:15}.main-content{margin:0;padding:0 24px}.mobile-header{display:flex;align-items:center;justify-content:space-between;height:58px;border-bottom:1px solid var(--line)}.menu-button{border:1px solid var(--line);background:#191a22;color:#eee;border-radius:6px;width:34px;height:34px;cursor:pointer}.mobile-brand{font-weight:800;font-size:15px;letter-spacing:-.04em}.mobile-brand small{font:8px var(--mono);letter-spacing:.08em;color:#9295a1;margin-left:6px}.mobile-status{font:8px var(--mono);color:#a8d8b8}.mobile-status i{display:inline-block;width:5px;height:5px;background:#88d5a7;border-radius:50%;margin-right:5px}.topline{height:48px}.hero{padding:55px 0 45px;grid-template-columns:1fr}.hero-art{height:270px;max-width:520px;width:100%}.project-grid,.detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.project-card:last-child{display:none}.project-image{height:170px}.quote-strip{margin-top:35px}.quote-credit{display:none}.page-intro{padding-top:48px}.about-layout{grid-template-columns:1fr}.about-side{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}.availability-card{grid-column:1/-1}.mobile-close{display:block;position:absolute;top:17px;right:15px;border:0;background:none;color:#aaa;font-size:23px;cursor:pointer}}
 @media(max-width:560px){.main-content{padding:0 17px}.topline-right{display:none}.hero{padding:42px 0 38px}.hero h1,.page-intro h1{font-size:43px}.hero-art{height:225px}.project-grid,.detail-grid,.video-grid{grid-template-columns:1fr}.project-card:last-child{display:block}.project-image{height:190px}.section-heading h2{font-size:22px}.quote-strip{padding:16px;gap:10px}.quote-strip p{font-size:12px}.page-intro{padding:42px 0 28px}.page-intro>p{font-size:12px}.project-row{grid-template-columns:20px minmax(0,1fr) 32px;gap:10px;align-items:start}.project-row-art{display:none}.project-row-year{padding-top:2px}.project-row-main h2{font-size:15px}.project-row-main p{font-size:10px}.detail-visual{height:200px}.detail-content p{min-height:0}.about-panel,.contact-panel{padding:18px}.about-side{grid-template-columns:1fr 1fr}.contact-links a{grid-template-columns:75px 1fr 16px;gap:8px}.contact-links strong{font-size:10px;overflow-wrap:anywhere}.case-cover{height:180px}.case-body{grid-template-columns:1fr;gap:10px}.case-body>div:last-child{grid-column:auto}.site-footer{font-size:7px}.filter-row{font-size:8px}}
+.project-row-image {
+    width: 100%;
+    height: 100%;
+    min-height: 120px;
+    overflow: hidden;
+}
+
+.project-row-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Estilos adicionales para las páginas individuales de proyectos */
+.project-hero-image {width:100%;max-height:480px;object-fit:cover;border-radius:12px;border:1px solid var(--line);display:block}
+.project-detail-content {max-width:960px;padding-bottom:50px}
+.project-section {margin:38px 0;padding-top:20px;border-top:1px solid var(--line)}
+.project-section h2 {font-size:23px;letter-spacing:-.04em;margin:12px 0}
+.project-section p {color:var(--muted);font-size:13px;line-height:1.95;max-width:760px}
+.project-gallery {display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin:22px 0}
+.project-gallery figure {margin:0}
+.project-gallery img {display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border:1px solid var(--line);border-radius:8px}
+.project-gallery figcaption {font:10px var(--mono);color:var(--muted);margin-top:9px}
+.project-placeholder {background:var(--panel-2);border:1px dashed #57516c;border-radius:9px;padding:35px 18px;text-align:center;color:var(--muted);font:11px var(--mono)}
+.project-video {width:100%;aspect-ratio:16/9;border:0;border-radius:9px}
+@media(max-width:560px){.project-gallery{grid-template-columns:1fr}}

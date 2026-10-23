@@ -1,3 +1,9 @@
+const standaloneProjects = {
+  "project-one": "projects/bound-by-death.html",
+  "project-two": "projects/project-two.html",
+  "project-three": "projects/project-three.html"
+};
+
 const pages = [...document.querySelectorAll("[data-page]")];
 const navLinks = [...document.querySelectorAll("[data-route]")];
 const sectionName = document.getElementById("currentSection");
@@ -41,11 +47,11 @@ const projectNotes = {
   },
   "project-one": {
     eyebrow: "GAME PROJECT / 001",
-    title: "Project Title <em>One.</em>",
-    lead: "A case study template for one of your collaborative or game jam projects.",
-    goal: "Introduce the game, its core idea, the team context and your responsibilities.",
-    process: "Describe your contribution, key design decisions, tools used and how the team iterated toward the final result.",
-    learning: "Reflect on what you learned and include a gameplay video, screenshots and links to the build where possible."
+    title: "Bound By Death",
+    lead: "Bound By Death is a 3D cooperative action hack-and-slash with a top-down view, designed for two players to play together locally.",
+    goal: "Bound by Death is a project developed by Ravenwhisp, a fictional videogame company created for the master's degree Advanced programming for AAA video games of UPC, with our own game engine. \n\n In this project I work alongside 17 colleges to develop this local cooperative 3D diablo like hack & slash. My main role in this project was lead Level Designer, but also I have been part of the QA team, reviewing features from the engine and from the game itself.",
+    process: "My main tasks for this project where designing all the levels, 3 in total. To eneter more in detail, I was the responsible of making the structural design of the levels, think where and how the machanics will be introduced. Alongside this task, I was also in charge of all the process to bring up the levels to our own engine, starting with the blockout and then substitite the basic geometry with assets that where given to us by the teachers. This process was made in Unity for hardware limitations of our engine, but once the structure of the level was completed I exported them as a .gltf to our engine. Once the level was on the engine, I was also responible to design and add the lighting to the level, alongside with the shadows and some post-procesed effects. For the QA, I reviewed most of the pull request that my partners did in the project, testing the new features or changes to existing ones and giving feedback of the results of my testing.",
+    learning: "Since I was the lead Level Designer, I had to take more responsabilities than in any project that I worked before. This help me to improve my organisation and my communication with my partners, since I need to be clear and also a person that they could lean on in case they need something related to level design."
   },
   "project-two": {
     eyebrow: "GAME PROJECT / 002",
@@ -75,6 +81,10 @@ function openMenu() {
 }
 function showPage(route) {
   let target = route || "home";
+  if (standaloneProjects[target]) {
+    window.location.href = standaloneProjects[target];
+    return;
+  }
   if (target in projectNotes) {
     const note = projectNotes[target];
     document.getElementById("detailEyebrow").textContent = note.eyebrow;
@@ -106,7 +116,12 @@ document.getElementById("backToProjects").addEventListener("click", () => {
 });
 document.querySelectorAll("[data-open-project]").forEach(button => {
   button.addEventListener("click", () => {
-    window.location.hash = button.dataset.openProject;
+    const project = button.dataset.openProject;
+    if (standaloneProjects[project]) {
+      window.location.href = standaloneProjects[project];
+    } else {
+      window.location.hash = project;
+    }
   });
 });
 document.getElementById("year").textContent = new Date().getFullYear();
