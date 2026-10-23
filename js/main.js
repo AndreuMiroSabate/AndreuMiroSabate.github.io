@@ -14,6 +14,7 @@ const names = {
   home: "OVERVIEW",
   "level-design": "LEVEL DESIGN",
   projects: "GAME PROJECTS",
+  "game-jams": "GAME JAMS",
   breakdowns: "VIDEO BREAKDOWNS",
   about: "ABOUT ME",
   contact: "CONTACT",
